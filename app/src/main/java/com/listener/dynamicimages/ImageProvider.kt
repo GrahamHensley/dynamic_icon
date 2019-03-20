@@ -94,12 +94,12 @@ class ImageProvider : ContentProvider() {
 
             return when (monthInt) {
                 0 -> sampleAndScaleImage(this.resources, R.drawable.fallout_snoo, size.toInt(), size.toInt())
-                1 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt())
+                1 -> sampleAndScaleImage(this.resources, R.drawable.val_snoo, size.toInt(), size.toInt())
                 2 -> sampleAndScaleImage(this.resources, R.drawable.stp_snoo, size.toInt(), size.toInt()) //st patrick
                 3 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt()) //easter
                 4 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt())
                 5 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt())
-                6 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt())//4th
+                6 -> sampleAndScaleImage(this.resources, R.drawable.npc_snoo, size.toInt(), size.toInt())//4th
                 7 -> sampleAndScaleImage(this.resources, R.drawable.default_snoo, size.toInt(), size.toInt())
                 8 -> sampleAndScaleImage(this.resources, R.drawable.fall_snoo, size.toInt(), size.toInt())
                 9 -> sampleAndScaleImage(this.resources, R.drawable.halloween_snoo, size.toInt(), size.toInt())//halloween
