@@ -5,20 +5,15 @@ import android.content.ContentValues
 import android.content.UriMatcher
 import android.content.res.Resources
 import android.database.Cursor
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.ParcelFileDescriptor
-import android.graphics.Bitmap
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.FileNotFoundException
 import java.io.IOException
 import java.util.*
-import android.graphics.BitmapFactory
-import android.util.Log
-import android.R.attr.start
-import android.R.attr.bitmap
-
-
 
 
 class ImageProvider : ContentProvider() {

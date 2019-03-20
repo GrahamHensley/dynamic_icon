@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
 
         loadLogo(ImageContract.Logo.CONTENT_URI, logoView)
 
+        setupSpinner()
+    }
+
+    private fun setupSpinner() {
 
         // Spinner element
         val spinner = findViewById<Spinner>(R.id.spinner)
@@ -55,10 +59,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
         spinner.prompt = "Pick a month"
         spinner.setSelection(2)
         // Spinner click listener
-        spinner.setOnItemSelectedListener(this)
-
-
+        spinner.onItemSelectedListener = this
     }
+
 
     private fun loadLogo(imageUri: Uri, imageView: ImageView?) {
         logoView?.setImageURI(imageUri)
